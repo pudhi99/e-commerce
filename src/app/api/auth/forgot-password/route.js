@@ -1,6 +1,6 @@
 // src/app/api/auth/forgot-password/route.js
 import prisma from "@/lib/prisma";
-import { createResetToken } from "@/lib/auth";
+// import { createResetToken } from "@/lib/auth";
 import { sendResetEmail } from "@/lib/email";
 
 export async function POST(request) {
@@ -18,7 +18,7 @@ export async function POST(request) {
       );
     }
 
-    const resetToken = await createResetToken(user.email);
+    // const resetToken = await createResetToken(user.email);
     const resetUrl = `${process.env.NEXTAUTH_URL}/reset-password?token=${resetToken}`;
 
     await sendResetEmail(user.email, resetUrl);
