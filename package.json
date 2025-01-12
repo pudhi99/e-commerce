@@ -2,6 +2,9 @@
   "name": "e-commerce",
   "version": "0.1.0",
   "private": true,
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "prisma generate && next build",
@@ -27,6 +30,7 @@
     "cloudinary": "^2.5.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.0.0",
+    "embla-carousel-autoplay": "^8.5.2",
     "embla-carousel-react": "^8.5.1",
     "lucide-react": "^0.469.0",
     "next": "15.1.3",

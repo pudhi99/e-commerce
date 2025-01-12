@@ -107,3 +107,19 @@ model Image {
   url   String
   createdAt DateTime @default(now())
 }
+
+
+model HeroBanner {
+  id                 String   @id @default(cuid())
+  title              String
+  subtitle           String?
+  description        String?
+  primaryButtonText  String?
+  primaryButtonLink  String?
+  secondaryButtonText String?
+  secondaryButtonLink String?
+  images             String[]  // Changed from single image to array of images
+  isActive           Boolean  @default(true)
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+}

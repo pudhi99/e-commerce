@@ -7,6 +7,7 @@ import {
   Settings,
   LayoutDashboard,
   ChevronDown,
+  Bandage,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -17,6 +18,7 @@ const DashboardSidebar = () => {
     { icon: LayoutDashboard, label: "Overview", href: "/dashboard" },
     { icon: Package, label: "Categories", href: "/dashboard/categories" },
     { icon: Package, label: "Products", href: "/dashboard/products" },
+    { icon: Bandage, label: "Hero Banner", href: "/dashboard/hero-banner" },
     { icon: Users, label: "Customers", href: "/dashboard/customers" },
     { icon: Settings, label: "Settings", href: "/dashboard/settings" },
   ];

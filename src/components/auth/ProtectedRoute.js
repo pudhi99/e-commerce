@@ -10,9 +10,9 @@ export default function ProtectedRoute({ children }) {
   }
 
   return (
-    <div>
+    <div className="relative">
       {/* You can add a dashboard header or user info here */}
-      <div className="mb-4">
+      <div className="absolute top-0 right-0 z-10 mb-4">
         Welcome {user?.name}!
         {isAdmin && <span className="ml-2 text-blue-600">Admin Access</span>}
       </div>
