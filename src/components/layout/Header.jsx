@@ -124,7 +124,7 @@ export default function Header({ session }) {
           {/* Right Side Icons */}
           <div className="flex items-center space-x-4">
             <ThemeToggle />
-            {session.user.role === "ADMIN" && (
+            {session?.user.role === "ADMIN" && (
               <Button variant="ghost" size="icon">
                 <Link href="/dashboard" className="hover:text-primary">
                   <UserCog className="h-5 w-5" />

@@ -10,7 +10,6 @@ export async function GET() {
         isActive: true,
       },
     });
-    console.log(banners, "banners");
     return NextResponse.json(banners);
   } catch (error) {
     console.log("Error fetching banners:", error);
